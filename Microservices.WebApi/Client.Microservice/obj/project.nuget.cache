@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o+ZkAXcAuMnmCQDDm0cU76zPmD2TzKccyAVE/YyaLuPFYmMNfsuw2TJIVrUh0Yp2rbRvZaWAt6GpwKHVdNCtbg==",
+  "dgSpecHash": "fTbxX4WKd4wv1O2dNNlP9hrPRZTkA2+h4wh0NgUftcHd66fHU93g50ybn0UCGqMYINmH+v43hZqbg5CnTrGfMQ==",
   "success": true,
-  "projectFilePath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Microservices.WebApi\\Client.Microservice\\Client.Microservice.csproj",
+  "projectFilePath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Repo\\Jobbie\\Microservices.WebApi\\Client.Microservice\\Client.Microservice.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xD\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\xD\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.5\\microsoft.aspnetcore.authentication.jwtbearer.6.0.5.nupkg.sha512",

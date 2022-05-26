@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Microservices.WebApi\\Post.Microservice\\Post.Microservice.csproj": {}
+    "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Repo\\Jobbie\\Microservices.WebApi\\Post.Microservice\\Post.Microservice.csproj": {}
   },
   "projects": {
-    "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Microservices.WebApi\\Post.Microservice\\Post.Microservice.csproj": {
+    "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Repo\\Jobbie\\Microservices.WebApi\\Post.Microservice\\Post.Microservice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Microservices.WebApi\\Post.Microservice\\Post.Microservice.csproj",
+        "projectUniqueName": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Repo\\Jobbie\\Microservices.WebApi\\Post.Microservice\\Post.Microservice.csproj",
         "projectName": "Post.Microservice",
-        "projectPath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Microservices.WebApi\\Post.Microservice\\Post.Microservice.csproj",
+        "projectPath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Repo\\Jobbie\\Microservices.WebApi\\Post.Microservice\\Post.Microservice.csproj",
         "packagesPath": "C:\\Users\\xD\\.nuget\\packages\\",
-        "outputPath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Microservices.WebApi\\Post.Microservice\\obj\\",
+        "outputPath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Repo\\Jobbie\\Microservices.WebApi\\Post.Microservice\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1176,11 +1176,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Microservices.WebApi\\Client.Microservice\\Client.Microservice.csproj",
+      "projectUniqueName": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Repo\\Jobbie\\Microservices.WebApi\\Client.Microservice\\Client.Microservice.csproj",
       "projectName": "Client.Microservice",
-      "projectPath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Microservices.WebApi\\Client.Microservice\\Client.Microservice.csproj",
+      "projectPath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Repo\\Jobbie\\Microservices.WebApi\\Client.Microservice\\Client.Microservice.csproj",
       "packagesPath": "C:\\Users\\xD\\.nuget\\packages\\",
-      "outputPath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Microservices.WebApi\\Client.Microservice\\obj\\",
+      "outputPath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Repo\\Jobbie\\Microservices.WebApi\\Client.Microservice\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

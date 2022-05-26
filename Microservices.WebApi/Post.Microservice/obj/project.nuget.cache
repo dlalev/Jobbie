@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IxDWOyr7N/jnZRDOk8ryMtr9FoNEsPgG0ZG3TklxIShpeuVNA2AgSNcpdSlSgQZkuftpWPqSSG5ksSGGo/q9pQ==",
+  "dgSpecHash": "qWnDuxEQxJjg0we2RxsmYhmNyTpfxlIYNTWR9efsOxwfM/crJKlD0DezQElk32/SZNzIghPsVXVjbGN813Ff5Q==",
   "success": true,
-  "projectFilePath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Microservices.WebApi\\Post.Microservice\\Post.Microservice.csproj",
+  "projectFilePath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Repo\\Jobbie\\Microservices.WebApi\\Post.Microservice\\Post.Microservice.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xD\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\xD\\.nuget\\packages\\intersoft.crosslight\\6.0.5000.975\\intersoft.crosslight.6.0.5000.975.nupkg.sha512",
