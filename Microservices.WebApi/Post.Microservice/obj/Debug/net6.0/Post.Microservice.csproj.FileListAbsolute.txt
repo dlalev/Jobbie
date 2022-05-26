@@ -132,3 +132,16 @@ F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbi
 F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\obj\Debug\net6.0\Post.Microservice.pdb
 F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\obj\Debug\net6.0\Post.Microservice.genruntimeconfig.cache
 F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\obj\Debug\net6.0\ref\Post.Microservice.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\bin\Debug\net6.0\MassTransit.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\bin\Debug\net6.0\MassTransit.Abstractions.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\bin\Debug\net6.0\MassTransit.AspNetCoreIntegration.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\bin\Debug\net6.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\bin\Debug\net6.0\RabbitMQ.Client.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\bin\Debug\net6.0\System.Text.Json.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\bin\Debug\net6.0\Shared.Models.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Post.Microservice\bin\Debug\net6.0\Shared.Models.pdb
