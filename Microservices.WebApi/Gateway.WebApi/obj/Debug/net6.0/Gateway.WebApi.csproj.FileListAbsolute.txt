@@ -40,3 +40,14 @@ F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbi
 F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Gateway.WebApi\obj\Debug\net6.0\Gateway.WebApi.pdb
 F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Gateway.WebApi\obj\Debug\net6.0\Gateway.WebApi.genruntimeconfig.cache
 F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Gateway.WebApi\obj\Debug\net6.0\ref\Gateway.WebApi.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Gateway.WebApi\bin\Debug\net6.0\FluentValidation.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Gateway.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Gateway.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Gateway.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Gateway.WebApi\bin\Debug\net6.0\Microsoft.Extensions.DiagnosticAdapter.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Gateway.WebApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Gateway.WebApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Gateway.WebApi\bin\Debug\net6.0\Ocelot.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Gateway.WebApi\obj\Debug\net6.0\Gateway.WebApi.MvcApplicationPartsAssemblyInfo.cs
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Gateway.WebApi\obj\Debug\net6.0\Gateway.WebApi.csproj.CopyComplete
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Microservices.WebApi\Gateway.WebApi\bin\Debug\net6.0\ocelot.json

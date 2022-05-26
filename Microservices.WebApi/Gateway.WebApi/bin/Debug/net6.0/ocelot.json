@@ -1,0 +1,54 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/post",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44397
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/post",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/post/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44397
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/post/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE", "PUT" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/client",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44368
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/client",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/client{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44368
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/client{id}",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    }
+
+  ]
+}
