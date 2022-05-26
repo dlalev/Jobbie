@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "edGPvTBXmjwxrHsgqbg62FKrk0yczmBYpOH7a0U7Ac4aVgIQHOtUDEPWA0JnKUYW8sF1Ksbo0IW5p6uKtkbHIg==",
+  "success": true,
+  "projectFilePath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Microservices.WebApi\\Gateway.WebApi\\Gateway.WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\xD\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512"
+  ],
+  "logs": []
+}
