@@ -1,68 +1,26 @@
-using MassTransit;
-using MassTransit.AspNetCoreIntegration;
-using MediatR;
-using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
-using Post.Microservice.Context;
+using Microsoft.Extensions.Logging;
 using System;
-using System.Reflection;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-
-var builder = WebApplication.CreateBuilder(args);
-
-// Adding services to the container.
-
-builder.Services.AddMassTransit(x =>
+namespace Product.Microservice
 {
-    x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
+    public class Program
     {
-        //config.UseHealthCheck(provider);
-        config.Host(new Uri("rabbitmq://localhost:15672"), h =>
+        public static void Main(string[] args)
         {
-            h.Username("guest");
-            h.Password("guest");
-        });
-    }));
-});
-//builder.Services.AddMassTransitHostedService();
+            CreateHostBuilder(args).Build().Run();
+        }
 
-builder.Services.AddControllers();
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Post.Microservice", Version = "v1" });
-});
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddDbContext<ApplicationContext>(options =>
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        b => b.MigrationsAssembly(typeof(ApplicationContext).Assembly.FullName)));
-builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
-builder.Services.AddScoped<IApplicationContext, ApplicationContext>();
-
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseDeveloperExceptionPage();
-    app.UseSwagger();
-    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Post.Microservice v1"));
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
+    }
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();

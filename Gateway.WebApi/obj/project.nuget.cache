@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JH119XWEmBb9WtalJs1BIZ4CPTZFjZaC3K5Y3elMo6ea0x1stZFI2jm/tBBWYGN9NjnhRO0T4gRVpehoT3LbVg==",
+  "dgSpecHash": "qM28ux+OlHwdN6c0n6UgfVONeAxsAWlstwCYhHvM+YpmW1PT9lnOCrFx0H2sw5TO15ZEvSIGip9wdDE8bC/qlw==",
   "success": true,
-  "projectFilePath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Repo\\Jobbie\\Microservices.WebApi\\Gateway.WebApi\\Gateway.WebApi.csproj",
+  "projectFilePath": "F:\\SEMESTER 6\\Individual project\\Jobbie_tutorial_rabbitMQ_MassTransit\\Repo\\Jobbie\\Gateway.WebApi\\Gateway.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xD\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\xD\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.1\\microsoft.aspnetcore.jsonpatch.6.0.1.nupkg.sha512",
