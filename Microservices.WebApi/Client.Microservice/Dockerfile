@@ -6,6 +6,7 @@ EXPOSE 80
 EXPOSE 443
 
 COPY *.csproj ./
+COPY . ../../
 RUN dotnet restore
 COPY . .
 RUN dotnet publish -c Release -o out
