@@ -9,22 +9,18 @@ namespace Post.Microservice.Controllers
     public class ClientPostController : ControllerBase
     {
         private readonly IBus _busService;
-        public ClientPostController(IBus busService)
+        readonly IPublishEndpoint _publishEndpoint;
+        public ClientPostController(IPublishEndpoint publishEndpoint)
         {
-            _busService = busService;
+            _publishEndpoint = publishEndpoint;
         }
         [HttpPost]
-        public async Task<string> CreatePost(Shared.Models.Models.ClientPost post)
+        public async Task<ActionResult> CreatePost(string value)
         {
-            if (post != null)
-            {
-                post.AddedOnDate = DateTime.Now;
-                Uri uri = new Uri("rabbitmq://localhost/postQueue");
-                var endPoint = await _busService.GetSendEndpoint(uri);
-                await endPoint.Send(post);
-                return "true";
-            }
-            return "false";
+            await _publishEndpoint.Publish< Shared.Models.Models.ClientPost>( new {
+            Value = value
+            });
+            return Ok();
         }
     }
 }

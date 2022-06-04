@@ -11,7 +11,7 @@ using Post.Microservice.Context;
 using System;
 using System.Reflection;
 
-namespace Product.Microservice
+namespace Post.Microservice
 {
     public class Startup
     {
@@ -27,31 +27,41 @@ namespace Product.Microservice
         {
             services.AddMassTransit(x =>
             {
-                x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
-                {
-                    //config.UseHealthCheck(provider);
-                    config.Host(new Uri("rabbitmq://localhost"), h =>
-                    {
-                        h.Username("guest");
-                        h.Password("guest");
-                    });
-                }));
-            });
-            services.AddMassTransitHostedService();
 
-            services.AddControllers();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Product.Microservice", Version = "v1" });
+                services.AddMassTransit(x =>
+                {
+                    x.UsingRabbitMq();
+                });
+
+                services.AddOptions<MassTransitHostOptions>().Configure(options =>
+                {
+                    // if specified, waits until the bus is started before
+                    // returning from IHostedService.StartAsync
+                    // default is false
+                    options.WaitUntilStarted = true;
+
+                    // if specified, limits the wait time when starting the bus
+                    options.StartTimeout = TimeSpan.FromSeconds(10);
+
+                    // if specified, limits the wait time when stopping the bus
+                    options.StopTimeout = TimeSpan.FromSeconds(30);
+                });
+                services.AddControllers();
+                services.AddSwaggerGen(c =>
+                {
+                    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Product.Microservice", Version = "v1" });
+                });
+                services.AddDbContext<ApplicationContext>(options =>
+                    options.UseSqlServer(
+                        Configuration.GetConnectionString("DefaultConnection"),
+                        b => b.MigrationsAssembly(typeof(ApplicationContext).Assembly.FullName)));
+                services.AddMediatR(Assembly.GetExecutingAssembly());
+                //services.AddScoped<Mediator>();
+                services.AddScoped<IApplicationContext, ApplicationContext>();
             });
-            services.AddDbContext<ApplicationContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection"),
-                    b => b.MigrationsAssembly(typeof(ApplicationContext).Assembly.FullName)));
-            services.AddMediatR(Assembly.GetExecutingAssembly());
-            //services.AddScoped<Mediator>();
-            services.AddScoped<IApplicationContext, ApplicationContext>();
         }
+
+        
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

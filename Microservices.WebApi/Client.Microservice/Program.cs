@@ -3,25 +3,18 @@ using MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
 builder.Services.AddMassTransit(x =>
 {
     x.AddConsumer<PostConsumer>();
-    x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cur =>
-    {
-        //cur.UseHealthCheck(provider);
-        cur.Host(new Uri("rabbitmq://localhost"), h =>
-        {
-            h.Username("guest");
-            h.Password("guest");
-        });
-        cur.ReceiveEndpoint("postQueue", oq =>
-        {
-            oq.PrefetchCount = 20;
-            oq.UseMessageRetry(r => r.Interval(2, 100));
-            oq.ConfigureConsumer<PostConsumer>(provider);
-        });
-    }));
+    x.SetKebabCaseEndpointNameFormatter();
+    x.UsingRabbitMq((context, cfg) => {
+
+        cfg.ConfigureEndpoints(context);
+        
+   });
+
 });
 
 builder.Services.AddControllers();
@@ -44,4 +37,4 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
+app.RunAsync();
