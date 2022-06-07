@@ -8,7 +8,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["Client.Microservice.csproj", "Client.Microservice/"]
-COPY ["../../Shared.Models/Shared.Models.csproj", "Shared.Models/"]
+COPY "../../Shared.Models/Shared.Models.csproj",  "Shared.Models/"
 RUN dotnet restore "Client.Microservice.csproj"
 COPY . .
 WORKDIR "/src/Microservices.WebApi/Client.Microservice"
