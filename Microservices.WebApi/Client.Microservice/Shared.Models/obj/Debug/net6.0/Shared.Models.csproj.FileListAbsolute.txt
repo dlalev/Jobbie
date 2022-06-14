@@ -1,0 +1,12 @@
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Shared.Models\bin\Debug\net6.0\Shared.Models.deps.json
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Shared.Models\bin\Debug\net6.0\Shared.Models.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Shared.Models\bin\Debug\net6.0\Shared.Models.pdb
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Shared.Models\obj\Debug\net6.0\Shared.Models.csproj.AssemblyReference.cache
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Shared.Models\obj\Debug\net6.0\Shared.Models.GeneratedMSBuildEditorConfig.editorconfig
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Shared.Models\obj\Debug\net6.0\Shared.Models.AssemblyInfoInputs.cache
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Shared.Models\obj\Debug\net6.0\Shared.Models.AssemblyInfo.cs
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Shared.Models\obj\Debug\net6.0\Shared.Models.csproj.CoreCompileInputs.cache
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Shared.Models\obj\Debug\net6.0\Shared.Models.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Shared.Models\obj\Debug\net6.0\refint\Shared.Models.dll
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Shared.Models\obj\Debug\net6.0\Shared.Models.pdb
+F:\SEMESTER 6\Individual project\Jobbie_tutorial_rabbitMQ_MassTransit\Repo\Jobbie\Shared.Models\obj\Debug\net6.0\ref\Shared.Models.dll
