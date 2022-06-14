@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "jobbiecluster-93a8"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "jobbiecluster-93a8"
+  template:
+    metadata:
+      labels:
+        app: "jobbiecluster-93a8"
+    spec:
+      containers:
+        - name: "jobbiecluster-93a8"
+          image: "jobbieaks.azurecr.io/jobbiecluster"
+          ports:
+          - containerPort: 80
