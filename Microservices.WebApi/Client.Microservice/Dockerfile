@@ -8,7 +8,7 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["Client.Microservice.csproj", "Client.Microservice/"]
 COPY ["Shared.Models/Shared.Models.csproj", "Shared.Models/"]
-RUN dotnet restore "Client.Microservice.csproj"
+RUN dotnet restore "Client.Microservice/Client.Microservice.csproj"
 COPY . .
 WORKDIR "/src/Client.Microservice"
 RUN dotnet build "Client.Microservice.csproj" -c Release -o /app/build
