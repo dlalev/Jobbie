@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: "jobbiecluster-4e9e"
+    labels:
+        app: "jobbiecluster-4e9e"
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+      name: http
+    selector:
+        app: "jobbiecluster-4e9e"
