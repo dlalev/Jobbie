@@ -1,0 +1,50 @@
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    
+    - uses: azure/docker-login@v1
+      with:
+        login-server: jobbieaks.azurecr.io
+        username: ${{ secrets.acr_jobbieaks_username }}
+        password: ${{ secrets.acr_jobbieaks_password }}
+    
+    - name: Build and push image to ACR
+      id: build-image
+      run: |
+        docker build "$GITHUB_WORKSPACE/Microservices.WebApi/Client.Microservice" -f  "Microservices.WebApi/Client.Microservice/Dockerfile" -t jobbieaks.azurecr.io/jobbiecluster:${{ github.sha }} --label dockerfile-path=Microservices.WebApi/Client.Microservice/Dockerfile
+        docker push jobbieaks.azurecr.io/jobbiecluster:${{ github.sha }}
+    
+    - uses: azure/k8s-set-context@v1
+      with:
+         kubeconfig: ${{ secrets.aks_jobbiecluster_kubeConfig }}
+      id: login
+    
+    - name: Create namespace
+      run: |
+        namespacePresent=`kubectl get namespace | grep jobbie-clusterb95e | wc -l`
+        if [ $namespacePresent -eq 0 ]
+        then
+            echo `kubectl create namespace jobbie-clusterb95e`
+        fi
+
+    - uses: azure/k8s-create-secret@v1
+      with:
+        namespace: jobbie-clusterb95e
+        container-registry-url: jobbieaks.azurecr.io
+        container-registry-username: ${{ secrets.acr_jobbieaks_username }}
+        container-registry-password: ${{ secrets.acr_jobbieaks_password }}
+        secret-name: jobbieclustedockerauth
+       
+    - uses: azure/k8s-deploy@v1.2
+      with:
+        namespace: jobbie-clusterb95e
+        manifests: |
+          manifests/deployment-4.yml
+          manifests/service-4.yml
+        images: |
+          jobbieaks.azurecr.io/jobbiecluster:${{ github.sha }}
+        imagepullsecrets: |
+          jobbieclustedockerauth
