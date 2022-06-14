@@ -7,11 +7,11 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["Microservices.WebApi/Client.Microservice/Client.Microservice.csproj", "Microservices.WebApi/Client.Microservice/"]
+COPY ["Client.Microservice.csproj", "Client.Microservice/"]
 COPY ["Shared.Models/Shared.Models.csproj", "Shared.Models/"]
-RUN dotnet restore "Microservices.WebApi/Client.Microservice/Client.Microservice.csproj"
+RUN dotnet restore "Client.Microservice.csproj"
 COPY . .
-WORKDIR "/src/Microservices.WebApi/Client.Microservice"
+WORKDIR "/src/Client.Microservice"
 RUN dotnet build "Client.Microservice.csproj" -c Release -o /app/build
 
 FROM build AS publish
